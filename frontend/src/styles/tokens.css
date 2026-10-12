@@ -1,0 +1,66 @@
+/* Design tokens. Dark is the default theme; light overrides below. */
+:root {
+  --font-display: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+  --font-sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
+
+  --bg: #07091a;
+  --bg-elev: #0e1126;
+  --bg-card: #0f1229;
+  --bg-soft: #171b38;
+  --border: #1f2447;
+  --border-strong: #323873;
+  --text: #f1f1f7;
+  --text-muted: #a3a3bd;
+  --accent: #8b5cf6;
+  --accent-2: #6366f1;
+  --accent-3: #3b82f6;
+  --accent-soft: rgba(139, 92, 246, 0.14);
+  --on-accent: #ffffff;
+  --success: #34d399;
+  --danger: #f87171;
+  --warn: #fbbf24;
+  --grad: linear-gradient(135deg, #8b5cf6 0%, #6366f1 55%, #3b82f6 100%);
+  --glow: rgba(124, 92, 246, 0.35);
+  --grid-line: rgba(255, 255, 255, 0.045);
+  --shadow: 0 10px 30px -12px rgba(0, 0, 0, 0.6);
+  --nav-bg: rgba(7, 9, 26, 0.75);
+
+  --radius-sm: 8px;
+  --radius: 14px;
+  --radius-lg: 20px;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.5rem;
+  --space-6: 2rem;
+  --space-7: 3rem;
+  --space-8: 5rem;
+  --nav-h: 64px;
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+  color-scheme: dark;
+}
+
+:root[data-theme='light'] {
+  --bg: #f7f7fb;
+  --bg-elev: #ffffff;
+  --bg-card: #ffffff;
+  --bg-soft: #efeff8;
+  --border: #e1e1ee;
+  --border-strong: #c9c9e0;
+  --text: #14141f;
+  --text-muted: #55556f;
+  --accent: #6d3fe0;
+  --accent-2: #4f46e5;
+  --accent-3: #2563eb;
+  --accent-soft: rgba(109, 63, 224, 0.1);
+  --success: #059669;
+  --danger: #dc2626;
+  --warn: #b45309;
+  --glow: rgba(109, 63, 224, 0.22);
+  --grid-line: rgba(20, 20, 40, 0.06);
+  --shadow: 0 10px 30px -14px rgba(40, 30, 90, 0.25);
+  --nav-bg: rgba(247, 247, 251, 0.8);
+  color-scheme: light;
+}

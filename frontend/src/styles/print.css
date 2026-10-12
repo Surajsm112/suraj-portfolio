@@ -1,0 +1,13 @@
+/* Print view: only the resume sheet is printed, on a white page. */
+@media print {
+  .resume-sheet.is-collapsed { display: block !important; }
+  body { background: #fff !important; color: #000 !important; }
+  .navbar, .footer, .back-to-top, .no-print, .skip-link, .section:not(#resume), .hero { display: none !important; }
+  #resume { padding: 0 !important; }
+  #resume .section-heading { display: none; }
+  .resume-sheet { border: 0 !important; box-shadow: none !important; background: #fff !important; padding: 0 !important; opacity: 1 !important; transform: none !important; }
+  .resume-sheet, .resume-sheet p, .resume-sheet li, .resume-sheet strong { color: #000 !important; }
+  .resume-sheet .muted { color: #444 !important; }
+  .resume-sheet h4 { color: #333 !important; }
+  .resume-sheet li { break-inside: avoid; }
+}

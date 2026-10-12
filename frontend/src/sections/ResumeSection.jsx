@@ -45,6 +45,7 @@ export default function ResumeSection() {
             <p>{profile.title}</p>
             <p className="muted">
               {profile.location}
+              {profile.phone && ` · ${profile.phone}`}
               {profile.email && ` · ${profile.email}`}
               {profile.social.linkedin && ` · ${profile.social.linkedin}`}
               {profile.social.github && ` · ${profile.social.github}`}
@@ -73,7 +74,11 @@ export default function ResumeSection() {
           <ul>{projects.map((p) => <li key={p.id}><strong>{p.title}</strong> — {p.summary}</li>)}</ul>
 
           <h4>Education</h4>
-          <p className="muted">{profile.education.text}</p>
+          <ul className="plain-list">
+            {profile.education.map((e) => (
+              <li key={e.degree}><strong>{e.degree}</strong> — {e.school} <span className="muted">({e.period})</span></li>
+            ))}
+          </ul>
         </div>
       </div>
     </section>

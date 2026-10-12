@@ -5,60 +5,61 @@ const env = import.meta.env;
 export const profile = {
   name: 'Suraj S',
   initials: 'SS',
-  title: 'Java Backend Engineer | Spring Boot | Microservices | API Engineering',
+  title: 'Java Full Stack Developer | Spring Boot | React.js | Microservices | REST APIs',
   // Shown as the green pill in the hero. Set to '' to hide it.
   availability: 'Available for opportunities',
   tagline:
-    'I build scalable backend systems, reliable REST APIs, and high-performance applications that deliver real business value.',
+    'I design and deliver scalable enterprise applications with Java, Spring Boot and React.js — with a track record of measurable impact: 25% lower API latency, 20% fewer delivery failures.',
   // Verify before publishing.
-  yearsOfExperience: '3+',
+  yearsOfExperience: '4+',
   organization: '6D Technologies',
-  location: 'Bengaluru, India',
-  specialization: 'Java Backend',
+  location: 'Bengaluru, Karnataka',
+  specialization: 'Java Full Stack',
 
   // Portrait in /public/profile.webp. Replace the file, or set to '' to show initials.
   photo: `${env.BASE_URL}profile.webp`,
 
   // Contact + socials: set via .env.local (VITE_*) or hard-code here. Empty = hidden / "not configured".
-  email: env.VITE_EMAIL || '',
+  email: env.VITE_EMAIL || 'surajsm112@gmail.com',
+  phone: env.VITE_PHONE || '+91 7899839183',
   social: {
     github: env.VITE_GITHUB_URL || '',
-    linkedin: env.VITE_LINKEDIN_URL || '',
+    linkedin: env.VITE_LINKEDIN_URL || 'https://www.linkedin.com/in/suraj-s-45686b190',
   },
 
   // Optional Java contact API base URL (see /backend). Empty = mailto fallback only.
   contactApiUrl: (env.VITE_API_URL || '').replace(/\/$/, ''),
 
-  // Real PDF placed in /public/resume. The shipped file is a clearly labelled placeholder — replace it.
+  // Real PDF placed in /public/resume.
   resume: {
     url: `${env.BASE_URL}resume/Suraj_S_Resume.pdf`,
     fileName: 'Suraj_S_Resume.pdf',
-    isPlaceholder: true,
+    isPlaceholder: false,
   },
 
   about: {
     // Short version for the page; the resume section uses `summary`.
     short:
-      'Java Backend Engineer at 6D Technologies building backend applications, REST APIs and enterprise telecom solutions — campaign management, email delivery, integrations and production support.',
+      'Java Full Stack Developer with 4+ years of experience designing and delivering scalable enterprise applications using Java, Spring Boot and React.js for telecom platforms serving global operators including Airtel, Banglalink, PLDT, VIL and NetOne.',
     summary:
-      'I am a Java Backend Engineer at 6D Technologies with experience building and maintaining backend applications, RESTful APIs, and enterprise telecom solutions. My work includes campaign management, email delivery systems, integrations, database optimization, and production issue resolution. I enjoy writing maintainable code, understanding system behavior, and collaborating with development and DevOps teams to deliver reliable releases.',
+      'Java Full Stack Developer with 4+ years of experience designing and delivering scalable enterprise applications using Java, Spring Boot, and React.js for telecom platforms serving global operators including Airtel, Banglalink, PLDT, VIL, and NetOne. Proficient across the stack — Spring Boot, REST APIs, Microservices, Apache Kafka, Redis, and React.js — with a consistent record of measurable impact: reduced API latency by 25%, cut delivery failures by 20%. Regularly engages with business stakeholders and cross-functional teams to translate requirements into technical solutions within Agile/Scrum delivery. Working exposure to Spring Security, OAuth2/JWT, CI/CD (Jenkins, GitHub Actions), Docker, Kubernetes, and AWS.',
     strengths: [
-      { icon: 'Server', tone: 'violet', title: 'Backend development & API design' },
-      { icon: 'Network', tone: 'blue', title: 'Microservices & asynchronous processing' },
-      { icon: 'Gauge', tone: 'rose', title: 'Performance optimization & troubleshooting' },
-      { icon: 'Database', tone: 'green', title: 'Database design & query optimization' },
-      { icon: 'Rocket', tone: 'amber', title: 'Production support & release collaboration' },
-      { icon: 'Sparkles', tone: 'cyan', title: 'Continuous learning & AI-assisted development' },
+      { icon: 'Server', tone: 'violet', title: 'Full stack development: Spring Boot & React.js' },
+      { icon: 'Network', tone: 'blue', title: 'Microservices & event-driven architecture' },
+      { icon: 'Gauge', tone: 'rose', title: 'Performance optimization: 25% lower API latency' },
+      { icon: 'Database', tone: 'green', title: 'Database design & SQL query tuning' },
+      { icon: 'Rocket', tone: 'amber', title: 'Production support across global telecom platforms' },
+      { icon: 'Sparkles', tone: 'cyan', title: 'Client & stakeholder communication, Agile delivery' },
     ],
     caption: 'Passionate about building, learning and growing',
   },
 
   resumeHighlights: ['Professional summary', 'Work experience', 'Technical skills', 'Featured projects', 'Education', 'Contact details'],
 
-  education: {
-    placeholder: true,
-    text: 'Education details to be added.',
-  },
+  education: [
+    { degree: 'Bachelor of Engineering (BE), Computer Science', school: 'ATME College of Engineering', period: '2022' },
+    { degree: 'Diploma', school: 'JSS Polytechnic', period: '2019' },
+  ],
 };
 
 export const navLinks = [

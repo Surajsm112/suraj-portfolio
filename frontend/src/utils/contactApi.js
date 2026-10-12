@@ -28,8 +28,19 @@ export async function sendContact(payload) {
   throw new Error(detail || 'The message could not be sent. Please try the email option instead.');
 }
 
-/** Builds a mailto: link (limitation: opens the visitor's email app; nothing is sent automatically). */
+/** Builds a mailto: link (limitation: depends on a desktop mail client being configured). */
 export function buildMailto({ name, email, subject, message }) {
   const body = `${message}\n\n— ${name}${email ? ` (${email})` : ''}`;
   return `mailto:${profile.email}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+/**
+ * Builds a Gmail web "compose" link. Unlike mailto:, this always opens (in a new tab) regardless
+ * of whether the visitor has a desktop mail client configured — it only needs a browser.
+ */
+export function buildGmailCompose({ name, email, subject, message } = {}) {
+  const params = new URLSearchParams({ view: 'cm', fs: '1', to: profile.email });
+  if (subject) params.set('su', subject);
+  if (name || message) params.set('body', `${message || ''}\n\n— ${name || ''}${email ? ` (${email})` : ''}`.trim());
+  return `https://mail.google.com/mail/?${params.toString()}`;
 }

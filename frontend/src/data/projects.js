@@ -1,64 +1,64 @@
-// Sanitized case studies. No client names, hostnames, URLs, credentials or proprietary code.
-// `impact` is only displayed when `impactVerified` is true — confirm numbers with your real work first.
+// Case studies drawn from the resume. `impact` is only displayed when `impactVerified` is true.
 export const projects = [
   {
     id: 'email-delivery',
-    title: 'Enterprise Email Delivery System',
+    title: 'High-Performance Email Delivery System',
     icon: 'Mail',
-    summary: 'Backend system supporting enterprise email delivery and campaign processing for telecom-related applications.',
+    summary: 'Scalable backend services supporting high-TPS email delivery for telecom campaign platforms.',
     overview:
-      'A backend system supporting enterprise email delivery and campaign processing for telecom-related applications.',
+      'Designed scalable backend services to support high-throughput (high-TPS) email delivery for telecom campaign platforms.',
     tech: ['Java', 'Spring Boot', 'Kafka', 'Multithreading', 'REST APIs'],
     highlights: [
       'Java and Spring Boot backend development.',
-      'Kafka-based asynchronous processing.',
-      'Multithreaded request processing.',
+      'Kafka-based asynchronous communication to decouple delivery pipelines from upstream triggers.',
+      'Improved retry logic and structured error handling.',
       'REST API integrations.',
       'Production troubleshooting and performance improvements.',
     ],
     contribution:
-      'Developed and maintained backend services, worked on Kafka-based asynchronous flows and multithreaded request handling, and supported integrations through REST APIs.',
+      'Designed the backend services, implemented Kafka-based asynchronous communication to decouple delivery pipelines from upstream triggers, and improved retry logic and error handling.',
     challenges:
       'Keeping high-volume delivery reliable: diagnosing production failures, tuning processing throughput and making retries and failure handling predictable.',
-    impact: 'Reduced delivery failures by approximately 20%.',
-    impactVerified: false, // set to true only if this can be substantiated by your actual work
+    impact: 'Reduced delivery failures by 20% through improved retry logic and structured error handling.',
+    impactVerified: true,
   },
   {
-    id: 'campaign-management',
-    title: 'Campaign Management System',
+    id: 'telecom-campaign-platforms',
+    title: 'Telecom Campaign Platforms',
     icon: 'Megaphone',
-    summary: 'Backend services supporting enterprise campaign workflows and email/SMS campaign delivery.',
-    overview: 'Backend services supporting enterprise campaign workflows and email/SMS campaign delivery.',
-    tech: ['Java', 'Spring Boot', 'REST APIs', 'MySQL'],
+    summary: 'Backend REST APIs supporting multi-channel (SMS, Email, WhatsApp) campaign delivery for global telecom operators including Airtel, Banglalink, PLDT, VIL, and NetOne.',
+    overview:
+      'Built and optimized backend REST APIs supporting multi-channel campaign delivery for global telecom operators across multi-country deployments.',
+    tech: ['Java', 'Spring Boot', 'React.js', 'Redis', 'REST APIs', 'MySQL'],
     highlights: [
-      'REST API development.',
-      'Campaign-related integrations.',
-      'Request validation and processing.',
-      'Database interaction and production support.',
+      'REST API development for SMS, Email, and WhatsApp campaign delivery.',
+      'Redis caching and performance tuning for high-concurrency workloads.',
+      'React.js front-end components for campaign management.',
+      'Production deployment support and monitoring for platform reliability at scale.',
     ],
     contribution:
-      'Built and maintained REST APIs and integrations for campaign workflows, including request validation, processing logic and database interaction.',
+      'Built and optimized backend REST APIs and React.js front-end components for multi-channel campaign delivery, implemented Redis caching for high-concurrency workloads, and supported production deployments and monitoring.',
     challenges:
-      'Handling varied campaign inputs safely through strict validation while keeping integrations and data consistent in production.',
-    impact: '',
-    impactVerified: false,
+      'Handling varied campaign inputs safely through strict validation while keeping integrations and data consistent across multi-country deployments in production.',
+    impact: 'Reduced API response latency by 25% through Redis-based caching strategies across high-traffic services.',
+    impactVerified: true,
   },
   {
     id: 'quota-refund',
     title: 'Quota Refund Module',
     icon: 'RotateCcw',
-    summary: 'Backend functionality for processing full or partial quota refunds and coordinating with related modules.',
+    summary: 'Reusable, modular refund-processing components adopted across multiple service lines, with automated refund scheduling.',
     overview:
-      'Backend functionality for processing full or partial quota refunds and coordinating refund requests with related modules.',
+      'Built reusable, modular refund-processing components adopted across multiple service lines for full and partial quota refunds.',
     tech: ['Java', 'Spring Boot', 'MySQL', 'REST APIs'],
     highlights: [
-      'Business logic implementation.',
-      'Backend integration.',
-      'Database operations.',
-      'Reliable processing and error handling.',
+      'Reusable, modular refund-processing components adopted across multiple service lines.',
+      'Automated refund scheduling and inter-service communication.',
+      'Business logic implementation for full and partial refund cases.',
+      'Reliable processing and error handling to reduce manual intervention.',
     ],
     contribution:
-      'Implemented refund business logic for full and partial cases, integrated with related modules and handled the database operations.',
+      'Built reusable refund business logic for full and partial cases, automated refund scheduling and inter-service communication, and handled the database operations to reduce manual intervention.',
     challenges:
       'Ensuring refunds are processed correctly and consistently across modules, with clear error handling when a step fails.',
     impact: '',

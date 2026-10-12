@@ -3,9 +3,9 @@
 // `core: true` marks the primary day-to-day stack (editable).
 export const skillCategories = [
   {
-    id: 'backend', chip: 'Backend', title: 'Backend', icon: 'Server', tone: 'violet',
+    id: 'backend', chip: 'Backend', title: 'Languages & Backend', icon: 'Server', tone: 'violet',
     items: [
-      { name: 'Java', logo: 'java', core: true },
+      { name: 'Java 8/11/17', logo: 'java', core: true },
       { name: 'Spring Boot', logo: 'spring', core: true },
       { name: 'Spring MVC', logo: 'spring' },
       { name: 'Spring Security', icon: 'ShieldCheck' },
@@ -13,9 +13,11 @@ export const skillCategories = [
       { name: 'Hibernate', icon: 'Layers' },
       { name: 'REST APIs', icon: 'Globe', core: true },
       { name: 'Microservices', icon: 'Boxes', core: true },
-      { name: 'JWT', icon: 'KeyRound' },
-      { name: 'API gateways', icon: 'Network' },
-      { name: 'Collections', icon: 'ListTree' },
+      { name: 'OAuth2 / JWT', icon: 'KeyRound' },
+      { name: 'Collections & Streams', icon: 'ListTree' },
+      { name: 'Multithreading & Concurrency', icon: 'Cpu' },
+      { name: 'Exception Handling', icon: 'ShieldAlert' },
+      { name: 'System Design', icon: 'Network' },
     ],
   },
   {
@@ -37,21 +39,35 @@ export const skillCategories = [
   {
     id: 'frontend', chip: 'Frontend', title: 'Frontend', icon: 'Layout', tone: 'blue',
     items: [
-      { name: 'React.js', logo: 'react' },
+      { name: 'React.js', logo: 'react', core: true },
       { name: 'JavaScript', logo: 'javascript' },
       { name: 'HTML5', logo: 'html5' },
       { name: 'CSS3', logo: 'css3' },
+      { name: 'Responsive Web Design', icon: 'Layout' },
     ],
   },
   {
-    id: 'devops', chip: 'DevOps', title: 'DevOps & Infrastructure', icon: 'Container', tone: 'cyan',
+    id: 'devops', chip: 'DevOps', title: 'Cloud & DevOps', icon: 'Container', tone: 'cyan',
     items: [
-      { name: 'Docker', logo: 'docker' },
-      { name: 'Git', logo: 'git' },
-      { name: 'CI/CD', logo: 'jenkins' },
+      { name: 'Docker', logo: 'docker', core: true },
+      { name: 'Kubernetes', logo: 'kubernetes' },
+      { name: 'OpenShift', logo: 'redhat' },
+      { name: 'AWS', logo: 'amazonwebservices' },
+      { name: 'Git', logo: 'git', core: true },
+      { name: 'GitLab', logo: 'gitlab' },
+      { name: 'Jenkins', logo: 'jenkins' },
+      { name: 'GitHub Actions', logo: 'githubactions' },
+      { name: 'CI/CD', icon: 'Workflow' },
+      { name: 'Maven', logo: 'maven' },
+      { name: 'Linux', logo: 'linux' },
+    ],
+  },
+  {
+    id: 'appservers', chip: 'App Servers', title: 'Application Servers', icon: 'Server', tone: 'green',
+    items: [
       { name: 'WildFly', logo: 'redhat' },
       { name: 'JBoss', logo: 'redhat' },
-      { name: 'Linux', logo: 'linux' },
+      { name: 'Apache Tomcat', logo: 'tomcat' },
     ],
   },
   {
@@ -74,11 +90,12 @@ export const skillCategories = [
     ],
   },
   {
-    id: 'collaboration', chip: 'Collaboration', title: 'Collaboration', icon: 'Users', tone: 'violet',
+    id: 'collaboration', chip: 'Collaboration', title: 'Practices & Collaboration', icon: 'Users', tone: 'violet',
     items: [
+      { name: 'Agile / Scrum', icon: 'Repeat', core: true },
       { name: 'Jira', logo: 'jira' },
-      { name: 'Git workflows', icon: 'GitBranch' },
-      { name: 'Agile / Scrum', icon: 'Repeat' },
+      { name: 'Code Reviews', icon: 'GitBranch' },
+      { name: 'Client & Stakeholder Communication', icon: 'Users' },
       { name: 'Documentation', icon: 'FileText' },
     ],
   },

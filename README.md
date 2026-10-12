@@ -62,10 +62,8 @@ VITE_API_URL=            # optional Java API base URL
 Anything left empty is hidden or shown as "Not configured yet" — no fake links are ever rendered.
 
 **Things to confirm before publishing**
-- The "~20% fewer failures" claim on the email-delivery project is stored but **hidden** (`impactVerified: false`). Set it to `true` only if you can substantiate it.
-- Experience dates (2022–Present, 2021) and "3+ years" are editable placeholders from your brief.
-- Education is a placeholder (`profile.education`).
-- Project contribution/challenge text is written generically from your highlights; refine it with your real details (keep it free of client names, hostnames and code).
+- Experience dates (2022–Present, 2021) are editable in `experience.js` — verify before publishing.
+- Education entries live in `profile.education` (array of `{ degree, school, period }`).
 
 ## 3. Replace the resume
 

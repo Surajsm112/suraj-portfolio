@@ -27,10 +27,10 @@ export default function Hero() {
           {profile.availability && <span className="pill"><span className="dot" />{profile.availability}</span>}
           <h1 id="hero-title">
             <span className="hi">Hi, I'm</span>
-            <span className="big gradient-text">Suraj S.</span>
+            <span className="big gradient-text">{profile.name}.</span>
           </h1>
           <p className="hero-role">
-            Java Backend Engineer <i>|</i> Spring Boot <i>|</i> Microservices
+            Java Full Stack Developer <i>|</i> Spring Boot <i>|</i> React.js <i>|</i> Microservices
           </p>
           <p className="hero-intro">{profile.tagline}</p>
 
